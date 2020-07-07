@@ -30,11 +30,16 @@ public class Program {
 
         Program program=new Program();
 
-        QuickSort quickSort=new QuickSort();
+        /*QuickSort quickSort=new QuickSort();
         int[] arr={12,44,32,76,33};
 
         quickSort.quickSort(arr,0,(arr.length-1));
-        program.display(arr);
+        program.display(arr);*/
+
+        ShellSort shellSort=new ShellSort();
+        int[] arr={73,24,45,62,22,19,46,53,22,67};
+
+        shellSort.shellSort(arr);
 
     }
 
