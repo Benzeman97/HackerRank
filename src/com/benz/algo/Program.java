@@ -36,12 +36,27 @@ public class Program {
         quickSort.quickSort(arr,0,(arr.length-1));
         program.display(arr);*/
 
-        ShellSort shellSort=new ShellSort();
+        /*ShellSort shellSort=new ShellSort();
         int[] arr={73,24,45,62,22,19,46,53,22,67};
 
-        shellSort.shellSort(arr);
+        shellSort.shellSort(arr);*/
+
+    /*FactoryMain factory=new FactoryMain();
+     factory.display();*/
+
+
+
+      Phone phone=new PhoneBuilder().setDisplay(5.6).setCamera(16).setOs("Android")
+              .setProcessor("snapdragon").setRam(8).builder();
+
+        System.out.println(phone);
+
 
     }
+
+/*    public static <T> Class<?> typeOf(final T value) {
+        return value.getClass();
+    }*/
 
     public void display(int[] arr)
     {
