@@ -45,12 +45,25 @@ public class Program {
      factory.display();*/
 
 
+//
+//      Phone phone=new PhoneBuilder().setDisplay(5.6).setCamera(16).setOs("Android")
+//              .setProcessor("snapdragon").setRam(8).builder();
+//
+//        System.out.println(phone);
 
-      Phone phone=new PhoneBuilder().setDisplay(5.6).setCamera(16).setOs("Android")
-              .setProcessor("snapdragon").setRam(8).builder();
+//        University university=new University();
+//        university.doWork();
 
-        System.out.println(phone);
+        /*TreeTest compositeTree=new TreeTest();
+        compositeTree.display();*/
 
+      /*  Prototype prototype=new Prototype();
+        try {
+            prototype.display();
+        }catch (CloneNotSupportedException cx)
+        {
+            cx.printStackTrace();
+        }*/
 
     }
 
