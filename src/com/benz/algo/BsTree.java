@@ -13,6 +13,10 @@ public class BsTree{
 
     Node root;
     Scanner sc;
+<<<<<<< HEAD
+=======
+
+>>>>>>> a210b3b4c37b2af1019136e2be38fafa63da5525
 
     public BsTree()
     {
@@ -27,7 +31,10 @@ public class BsTree{
             System.out.println("2.Delete");
             System.out.println("3.Display");
             System.out.println("4.Search");
+<<<<<<< HEAD
             System.out.println("5.Check Root");
+=======
+>>>>>>> a210b3b4c37b2af1019136e2be38fafa63da5525
 
             System.out.println("Enter your choice");
             int ch = sc.nextInt();
@@ -49,7 +56,10 @@ public class BsTree{
                     System.out.println("Enter a data to search");
                     int s_data=sc.nextInt();
                     search(root,s_data);break;
+<<<<<<< HEAD
                 case 5:getRootNode();break;
+=======
+>>>>>>> a210b3b4c37b2af1019136e2be38fafa63da5525
                 default:
                     System.exit(8);
             }
@@ -87,6 +97,7 @@ public class BsTree{
         }
     }
 
+<<<<<<< HEAD
     public Node removeRootNode(Node curr)
     {
        if(curr.l_link==null && curr.r_link==null)
@@ -119,6 +130,8 @@ public class BsTree{
        }
     }
 
+=======
+>>>>>>> a210b3b4c37b2af1019136e2be38fafa63da5525
     public Node findMinFromRight(Node node)
     {
         while(node.l_link!=null)
@@ -126,6 +139,7 @@ public class BsTree{
         return node;
     }
 
+<<<<<<< HEAD
     public void getRootNode()
     {
         if(root!=null)
@@ -134,12 +148,17 @@ public class BsTree{
             System.out.println("No node(s) in the tree");
     }
 
+=======
+>>>>>>> a210b3b4c37b2af1019136e2be38fafa63da5525
     public Node remove(Node curr,int data,Node p) {
 
         if (curr == null)
             return curr;
+<<<<<<< HEAD
         else if(data==root.data)
             return removeRootNode(curr);
+=======
+>>>>>>> a210b3b4c37b2af1019136e2be38fafa63da5525
         else if (data < curr.data) {
             p = curr;
             remove(curr.l_link, data, p);
@@ -231,10 +250,13 @@ public class BsTree{
     public void inOrder(Node root)
     {
         Node temp=root;
+<<<<<<< HEAD
         if(temp==null) {
             System.out.println("No node(s) in th tree");
             return;
         }
+=======
+>>>>>>> a210b3b4c37b2af1019136e2be38fafa63da5525
         if(temp.l_link!=null)
             inOrder(temp.l_link);
         System.out.print(temp.data+"\t");

@@ -71,6 +71,7 @@ public class Program {
       /*Tube tube=new Tube();
       tube.display();*/
 
+<<<<<<< HEAD
      /* BsTree bsTree=new BsTree();
       bsTree.opearate();*/
 
@@ -78,6 +79,10 @@ public class Program {
         reg.pattern();*/
 
 
+=======
+      BsTree bsTree=new BsTree();
+      bsTree.opearate();
+>>>>>>> a210b3b4c37b2af1019136e2be38fafa63da5525
 
     }
 
