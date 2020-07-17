@@ -68,6 +68,9 @@ public class Program {
       /*Tube tube=new Tube();
       tube.display();*/
 
+      BsTree bsTree=new BsTree();
+      bsTree.opearate();
+
     }
 
 /*    public static <T> Class<?> typeOf(final T value) {
