@@ -74,6 +74,10 @@ public class Program {
       BsTree bsTree=new BsTree();
       bsTree.opearate();
 
+     /* BsTree bsTree=new BsTree();
+      bsTree.opearate();*/
+
+
         /*RegExDemo reg=new RegExDemo();
         reg.pattern();*/
 

@@ -14,6 +14,7 @@ public class BsTree{
     Node root;
     Scanner sc;
 
+
     public BsTree()
     {
         root=null;
@@ -28,6 +29,7 @@ public class BsTree{
             System.out.println("3.Display");
             System.out.println("4.Search");
             System.out.println("5.Check Root");
+
 
             System.out.println("Enter your choice");
             int ch = sc.nextInt();
@@ -87,6 +89,7 @@ public class BsTree{
         }
     }
 
+
     public Node removeRootNode(Node curr)
     {
        if(curr.l_link==null && curr.r_link==null)
@@ -119,12 +122,14 @@ public class BsTree{
        }
     }
 
+
     public Node findMinFromRight(Node node)
     {
         while(node.l_link!=null)
             node=node.l_link;
         return node;
     }
+
 
     public void getRootNode()
     {
@@ -134,12 +139,15 @@ public class BsTree{
             System.out.println("No node(s) in the tree");
     }
 
+
     public Node remove(Node curr,int data,Node p) {
 
         if (curr == null)
             return curr;
+
         else if(data==root.data)
             return removeRootNode(curr);
+
         else if (data < curr.data) {
             p = curr;
             remove(curr.l_link, data, p);
@@ -231,10 +239,12 @@ public class BsTree{
     public void inOrder(Node root)
     {
         Node temp=root;
+
         if(temp==null) {
             System.out.println("No node(s) in th tree");
             return;
         }
+
         if(temp.l_link!=null)
             inOrder(temp.l_link);
         System.out.print(temp.data+"\t");
