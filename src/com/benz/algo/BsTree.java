@@ -188,17 +188,17 @@ public class BsTree{
         return curr;
     }
 
-    public void search(Node curr,int data) {
-        if (curr == null)
-            System.out.println("No node(s) in the tree");
-        else if (data < curr.data)
-            search(curr.l_link, data);
-        else if (data > curr.data)
-            search(curr.r_link, data);
-        else {
-            if (curr.data == data)
-                System.out.println(data + " has been found");
-        }
+
+    public void search(Node curr,int data)
+    {
+          if(curr.data==data)
+              System.out.println(data+" has been found in the tree");
+          else if(data<curr.data && curr.l_link!=null)
+              search(curr.l_link,data);
+          else if(data>curr.data && curr.r_link!=null)
+              search(curr.r_link,data);
+          else
+              System.out.println(data+" has not been found in the tree");
     }
 
    /* public Node remove(Node root,int data)

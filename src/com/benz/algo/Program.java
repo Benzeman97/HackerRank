@@ -71,8 +71,8 @@ public class Program {
       /*Tube tube=new Tube();
       tube.display();*/
 
-     /* BsTree bsTree=new BsTree();
-      bsTree.opearate();*/
+      BsTree bsTree=new BsTree();
+      bsTree.opearate();
 
         /*RegExDemo reg=new RegExDemo();
         reg.pattern();*/
